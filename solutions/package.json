@@ -1,0 +1,18 @@
+{
+  "name": "p2p-workshop-solutions",
+  "version": "1.0.0",
+  "description": "the solutions for the p2p-workshop exercises",
+  "dependencies": {
+    "duplex-json-stream": "^1.0.1",
+    "fully-connected-topology": "^1.0.0",
+    "hash-to-port": "^1.0.0",
+    "level": "^1.3.0",
+    "lookup-multicast-dns": "^1.0.1",
+    "register-multicast-dns": "^1.0.1",
+    "scuttleup": "^3.3.0",
+    "stream-set": "^1.1.0"
+  },
+  "devDependencies": {},
+  "author": "Mathias Buus (@mafintosh) and Eduardo Sorribas (@sorribas)",
+  "license": "MIT"
+}
