@@ -1,8 +1,8 @@
 # p2p-workshop
 
-Github pages repo for workshop about p2p.
+Github pages repo for a workshop to learn about p2p.
 
-Goto https://mafintosh.github.io/p2p-workshop to try it out.
+Go to https://mafintosh.github.io/p2p-workshop to try it out.
 
 ## License
 
