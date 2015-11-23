@@ -9,6 +9,7 @@ var me = process.argv[2]
 var peers = process.argv.slice(3)
 
 var db = level(me + '.db')
+var username = me
 var logs = scuttleup(db, {valueEncoding: 'json'})
 var swarm = topology(toAddress(username), peers.map(toAddress))
 
