@@ -665,7 +665,7 @@ nickname to each client and the client should print something like &#39;username
 <p>You can build up on the solution for <a href="02.html">problem 2</a> to solve this problem. One important thing to note is that we now need to send
 structured information to the server in order to be able to send more than just the message. We can of course use JSON for
 this, but instead of encoding and decoding the messages everytime we send info to the server, we can use a module to help
-us out with that. It&#39;s called <code>duplex-json-stream</code> and you can use it to wrap a stream so that it turns it into an <code>object</code>
+us out with that. It&#39;s called <a href="https://github.com/mafintosh/duplex-json-stream">duplex-json-stream</a> and you can use it to wrap a stream so that it turns it into an <code>object</code>
 stream. So for example if you do this</p>
 <pre><code class="lang-js">socket = jsonStream(socket)
 </code></pre>
