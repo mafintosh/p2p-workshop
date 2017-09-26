@@ -34,9 +34,12 @@ var seq = 0
 var id = Math.random()
 
 process.stdin.on('data', function (data) {
+  var message = data.toString().trim()
+  var output = {from: id, seq: seq++, username: me, message: message}
+  received[id] = seq // update my own so i dont retransmit
+  
   connections.forEach(function (socket) {
-    var message = data.toString().trim()
-    socket.write({from: id, seq: seq++, username: me, message: message})
+    socket.write(output)
   })
 })
 
