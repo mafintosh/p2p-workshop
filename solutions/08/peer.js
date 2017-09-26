@@ -37,6 +37,7 @@ process.stdin.on('data', function (data) {
   connections.forEach(function (socket) {
     var message = data.toString().trim()
     socket.write({from: id, seq: seq++, username: me, message: message})
+    received[id] = seq // update; if not i'll retransmit this when it comes back from another peer
   })
 })
 
